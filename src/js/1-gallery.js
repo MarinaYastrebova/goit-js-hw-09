@@ -66,7 +66,6 @@ const images = [
 const container = document.querySelector('.gallery');
 
 container.insertAdjacentHTML('beforeend', createMarkup(images));
-// container.addEventListener('click', handleClick);
 
 function createMarkup(arr) {
   return arr
@@ -86,9 +85,7 @@ function createMarkup(arr) {
     .join('');
 }
 
-// Описаний в документації
 import SimpleLightbox from 'simplelightbox';
-// Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 new SimpleLightbox('.gallery-link', {
